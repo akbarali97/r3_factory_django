@@ -734,15 +734,15 @@ m362 -762 c0 -85 -17 -128 -70 -180 -134 -129 -400 -93 -400 55 0 115 120 175
             {% for product in products %}
             <div class="col-3 products-item m-2">
 
-              <div class="row m-1 my-2">
+              <div class="row m-1 my-3">
                 <div class="col">
-                  <span class="verified">
+                  <span class="verified p-1">
                     Verifed
                   </span>
                 </div>
               </div>
 
-              <div class="row m-1 my-2">
+              <div class="row m-1 my-3">
                 <div class="col">
                   <a href="{% url 'product' product.id %}">
                     <img class="base64ImageForDisplay" alt="Preview Image" src="data:image/png;base64,{{product.image_medium}}">
@@ -759,7 +759,7 @@ m362 -762 c0 -85 -17 -128 -70 -180 -134 -129 -400 -93 -400 55 0 115 120 175
                 </div>
               </div>
 
-              <div class="row m-1 my-2">
+              <div class="row m-1 my-3">
                 <div class="col"><span class="text-center product-status  p-1">Pre-owned</span></div>
                 <div class="col"><span>{{product.list_price}}</span></div>
               </div>
